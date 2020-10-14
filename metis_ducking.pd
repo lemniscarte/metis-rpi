@@ -1,0 +1,57 @@
+#N canvas 766 238 660 525 12;
+#X obj 257 139 env~;
+#X obj 257 207 * -1;
+#X obj 257 184 / 100;
+#X obj 257 299 pack 0 10;
+#X obj 257 322 line~;
+#X obj 257 253 *;
+#X obj 415 161 vsl 17 62 0 2 0 1 empty empty gain -1 -9 1 10 -262144
+-1 -1 6100 1;
+#X obj 75 359 *~;
+#X obj 199 359 *~;
+#X floatatom 257 162 5 0 0 0 - - -, f 5;
+#X obj 257 230 + 1;
+#X obj 314 131 vsl 17 62 -1 0 0 1 empty empty squash -6 -9 1 10 -262144
+-1 -1 0 1;
+#X obj 331 329 hsl 92 8 0 1 0 0 empty empty bounce\ viewer 17 -7 1
+10 -262144 -1 -1 3723 1;
+#X obj 75 51 inlet~;
+#X obj 197 51 inlet~;
+#X obj 257 51 inlet~;
+#X obj 50 461 outlet~;
+#X obj 174 461 outlet~;
+#X obj 257 276 clip -1 1;
+#X obj 50 412 mux~;
+#X obj 174 412 mux~;
+#X obj 497 351 tgl 28 1 empty empty on/off 2 -8 1 10 -259777 -1 -1
+1 1;
+#X obj 314 51 inlet squash;
+#X obj 415 51 inlet gain;
+#X obj 497 51 inlet onOffToggle;
+#X connect 0 0 9 0;
+#X connect 1 0 10 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 0 12 0;
+#X connect 4 0 7 1;
+#X connect 4 0 8 1;
+#X connect 5 0 18 0;
+#X connect 6 0 5 1;
+#X connect 7 0 19 1;
+#X connect 8 0 20 1;
+#X connect 9 0 2 0;
+#X connect 10 0 5 0;
+#X connect 11 0 1 1;
+#X connect 13 0 7 0;
+#X connect 13 0 19 0;
+#X connect 14 0 8 0;
+#X connect 14 0 20 0;
+#X connect 15 0 0 0;
+#X connect 18 0 3 0;
+#X connect 19 0 16 0;
+#X connect 20 0 17 0;
+#X connect 21 0 19 0;
+#X connect 21 0 20 0;
+#X connect 22 0 11 0;
+#X connect 23 0 6 0;
+#X connect 24 0 21 0;

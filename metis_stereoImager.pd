@@ -1,0 +1,18 @@
+#N canvas 1358 102 450 300 12;
+#X obj 58 35 inlet~;
+#X obj 58 235 outlet~;
+#X obj 259 235 outlet~;
+#X obj 58 174 delread4~ \$0-stereo 1;
+#X obj 259 174 delread4~ \$0-stereo 2;
+#X floatatom 259 146 5 0 0 0 - - -, f 5;
+#X obj 259 114 f \$1;
+#X obj 259 62 loadbang;
+#X obj 357 35 inlet;
+#X obj 58 64 delwrite~ \$0-stereo 20;
+#X connect 0 0 9 0;
+#X connect 3 0 1 0;
+#X connect 4 0 2 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;

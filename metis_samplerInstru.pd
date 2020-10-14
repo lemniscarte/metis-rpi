@@ -1,0 +1,58 @@
+#N canvas 443 703 1479 595 12;
+#X obj 86 399 metis_sampler;
+#X obj 174 337 metis_samplerRandomPicker;
+#X obj 86 370 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 108 370 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 130 370 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 152 354 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 2500 1;
+#X obj 174 310 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 86 518 *~;
+#X obj 85 241 metis_nudge;
+#X obj 85 39 inlet trigger;
+#X obj 187 39 inlet msInterval;
+#X obj 310 39 inlet delayByDivs;
+#X obj 440 39 inlet nudgeByMs;
+#X obj 556 39 inlet folderPath;
+#X obj 679 39 inlet randomSample;
+#X obj 147 547 outlet lengthInSamples;
+#X obj 313 547 outlet lengthInMs;
+#X obj 86 547 outlet~;
+#X obj 359 401 metis_adsr 1 0 1000 100 1000 1000;
+#X obj 816 39 inlet peakLevel;
+#X obj 932 39 inlet attack;
+#X obj 1027 39 inlet decay;
+#X obj 1115 39 inlet sustain;
+#X obj 1217 39 inlet release;
+#X obj 1319 39 inlet gate;
+#X obj 346 310 symbol;
+#X connect 0 0 7 0;
+#X connect 0 1 15 0;
+#X connect 0 2 16 0;
+#X connect 1 0 0 4;
+#X connect 2 0 0 0;
+#X connect 2 0 18 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 2;
+#X connect 5 0 0 3;
+#X connect 6 0 1 0;
+#X connect 7 0 17 0;
+#X connect 8 0 2 0;
+#X connect 9 0 8 0;
+#X connect 10 0 8 1;
+#X connect 11 0 8 2;
+#X connect 12 0 8 3;
+#X connect 13 0 25 0;
+#X connect 14 0 6 0;
+#X connect 18 0 7 1;
+#X connect 19 0 18 1;
+#X connect 20 0 18 2;
+#X connect 21 0 18 3;
+#X connect 22 0 18 4;
+#X connect 23 0 18 5;
+#X connect 24 0 18 6;
+#X connect 25 0 1 1;

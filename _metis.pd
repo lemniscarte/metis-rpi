@@ -1,0 +1,407 @@
+#N canvas 435 207 2096 1117 12;
+#X obj 57 96 metis_tempo;
+#X obj 57 62 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X msg 225 46 96;
+#X obj 225 23 loadbang;
+#X floatatom 225 69 5 0 0 0 - - -, f 5;
+#X obj 57 212 metis_swing;
+#X floatatom 131 174 5 0 100 0 - - -, f 5;
+#X obj 1751 137 metis_scale;
+#X obj 1779 95 hradio 8 0 1 28 empty empty empty 0 -8 0 10 -262144
+-1 -1 15;
+#X floatatom 1751 166 5 0 0 0 - - -, f 5;
+#X floatatom 1772 192 5 0 0 0 - - -, f 5;
+#X symbolatom 1793 218 10 0 0 0 - - -, f 10;
+#X symbolatom 1814 244 20 0 0 0 - - -, f 20;
+#X obj 1835 166 unpack;
+#X floatatom 1835 192 5 0 0 0 - - -, f 5;
+#X floatatom 1874 192 5 0 0 0 - - -, f 5;
+#X floatatom 1765 69 5 0 0 0 - - -, f 5;
+#X floatatom 1751 41 5 0 0 0 - - -, f 5;
+#X obj 1793 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1811 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 1834 109 5 0 0 0 - - -, f 5;
+#X obj 1884 111 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 85 130 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 99 150 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 113 130 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 127 150 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 141 130 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 183 150 5 0 0 0 - - -, f 5;
+#X floatatom 197 126 5 0 0 0 - - -, f 5;
+#X floatatom 211 174 5 0 0 0 - - -, f 5;
+#X obj 57 247 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 27 129 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 71 150 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 225 150 5 0 0 0 - - -, f 5;
+#X obj 356 536 metis_sampler;
+#X obj 444 474 metis_samplerRandomPicker;
+#X obj 356 507 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 378 507 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 400 507 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 422 491 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 1000 1;
+#X floatatom 444 566 5 0 0 0 - - -, f 5;
+#X floatatom 400 566 5 0 0 0 - - -, f 5;
+#X obj 444 447 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 155 150 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 169 130 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 609 946 metis_output;
+#X msg 775 889 threshold -8 \, ratio 4 \, response 40 \, gain 4 \,
+rmspeak 0 \, lookahead 10, f 70;
+#X obj 726 890 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 167 845 metis_stereoDelay;
+#X obj 747 889 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 1000 1;
+#X obj 702 974 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-258049 -1;
+#X obj 793 360 metis_sampler;
+#X obj 881 298 metis_samplerRandomPicker;
+#X obj 793 331 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 815 331 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 837 331 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 859 315 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 250 1;
+#X floatatom 881 390 5 0 0 0 - - -, f 5;
+#X floatatom 837 390 5 0 0 0 - - -, f 5;
+#X obj 881 271 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 1819 1079 recording buffer with delayline;
+#X obj 325 805 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 57 539 metis_sampler;
+#X obj 145 477 metis_samplerRandomPicker;
+#X obj 57 510 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 79 510 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 101 510 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 123 494 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 250 1;
+#X floatatom 145 569 5 0 0 0 - - -, f 5;
+#X floatatom 101 569 5 0 0 0 - - -, f 5;
+#X obj 145 450 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 57 388 metis_euclid 8 5;
+#X obj 698 296 metis_everyn 3;
+#X obj 570 713 metis_ducking;
+#X obj 882 708 metis_sampler;
+#X obj 970 646 metis_samplerRandomPicker;
+#X obj 882 679 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 904 679 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 926 679 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 948 663 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 900 1;
+#X floatatom 970 738 5 0 0 0 - - -, f 5;
+#X floatatom 926 738 5 0 0 0 - - -, f 5;
+#X obj 970 619 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 1019 751 5 0 20 0 - - -, f 5;
+#X obj 882 776 metis_stereoImager 9;
+#X text 1819 1049 fade to gray effect;
+#X text 1819 1019 choreographed effect sweeps;
+#X floatatom 939 523 5 0 0 0 - - -, f 5;
+#X floatatom 983 523 5 0 0 0 - - -, f 5;
+#X obj 881 550 metis_nudge 2;
+#X obj 414 1020 metis_looper;
+#X floatatom 495 991 5 0 0 0 - - -, f 5;
+#X obj 454 982 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 305 805 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 2500 1;
+#X obj 285 805 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 265 805 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 2500 1;
+#X floatatom 251 777 5 1 8 0 - - -, f 5;
+#X floatatom 237 747 5 1 8 0 - - -, f 5;
+#X text 1819 959 reverb and hipass in one knob;
+#X obj 609 1044 metis_outputRouter;
+#X obj 732 1009 hradio 15 0 1 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X msg 970 583 symbol samples/hats/*.wav, f 26;
+#X msg 145 414 symbol samples/hats/*.wav, f 26;
+#X msg 881 235 symbol samples/toms/*.wav, f 26;
+#X msg 444 401 symbol samples/bd_kick/*.wav, f 31;
+#X obj 1375 787 metis_sampler;
+#X obj 1463 725 metis_samplerRandomPicker;
+#X obj 1375 758 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1397 758 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1419 758 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 1441 742 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 2500 1;
+#X floatatom 1463 817 5 0 0 0 - - -, f 5;
+#X floatatom 1419 817 5 0 0 0 - - -, f 5;
+#X obj 1463 698 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 1463 662 symbol samples/snare/*.wav;
+#X obj 1375 906 *~;
+#X obj 1898 718 vsl 15 26 1 1000 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 500 1;
+#X obj 1663 718 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 1300 1;
+#X obj 1710 718 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 200 1;
+#X obj 1757 718 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 1150 1;
+#X obj 1804 718 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 500 1;
+#X obj 1851 718 vsl 15 26 0 1000 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 450 1;
+#X floatatom 1898 758 5 0 0 0 - - -, f 5;
+#X floatatom 1663 758 5 0 0 0 - - -, f 5;
+#X floatatom 1710 758 5 0 0 0 - - -, f 5;
+#X floatatom 1757 758 5 0 0 0 - - -, f 5;
+#X floatatom 1804 758 5 0 0 0 - - -, f 5;
+#X floatatom 1851 758 5 0 0 0 - - -, f 5;
+#X floatatom 1432 602 5 0 0 0 - - -, f 5;
+#X floatatom 1476 602 5 0 0 0 - - -, f 5;
+#X obj 1374 629 metis_nudge 4;
+#X obj 1613 791 metis_adsr 1 4 40 30 400 200;
+#X obj 414 1055 metis_outputRouter;
+#X obj 537 1022 hradio 15 0 1 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X obj 1173 117 loadbang;
+#X obj 1173 146 del 100;
+#X obj 1991 352 vsl 15 26 1 1000 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 1350 1;
+#X obj 1756 352 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 850 1;
+#X obj 1803 352 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 1850 352 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 1700 1;
+#X obj 1897 352 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 200 1;
+#X obj 1944 352 vsl 15 26 0 1000 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 650 1;
+#X floatatom 1991 392 5 0 0 0 - - -, f 5;
+#X floatatom 1756 392 5 0 0 0 - - -, f 5;
+#X floatatom 1803 392 5 0 0 0 - - -, f 5;
+#X floatatom 1850 392 5 0 0 0 - - -, f 5;
+#X floatatom 1897 392 5 0 0 0 - - -, f 5;
+#X floatatom 1944 392 5 0 0 0 - - -, f 5;
+#X obj 1672 430 metis_samplerInstru;
+#X obj 1742 328 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 1728 299 samples/clap/*.wav;
+#X obj 1531 329 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 1684 299 5 0 0 0 - - -, f 5;
+#X obj 1531 299 metis_everyn 3;
+#X floatatom 1640 299 5 0 0 0 - - -, f 5;
+#X connect 0 0 5 0;
+#X connect 0 0 31 0;
+#X connect 0 1 32 0;
+#X connect 0 2 22 0;
+#X connect 0 3 23 0;
+#X connect 0 4 24 0;
+#X connect 0 5 25 0;
+#X connect 0 6 26 0;
+#X connect 0 7 43 0;
+#X connect 0 8 44 0;
+#X connect 0 9 27 0;
+#X connect 0 10 28 0;
+#X connect 0 11 29 0;
+#X connect 0 12 33 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 0 1;
+#X connect 5 0 30 0;
+#X connect 6 0 5 3;
+#X connect 7 0 9 0;
+#X connect 7 1 10 0;
+#X connect 7 2 11 0;
+#X connect 7 3 12 0;
+#X connect 7 4 13 0;
+#X connect 8 0 7 2;
+#X connect 13 0 14 0;
+#X connect 13 1 15 0;
+#X connect 16 0 7 1;
+#X connect 17 0 7 0;
+#X connect 18 0 7 3;
+#X connect 19 0 7 4;
+#X connect 20 0 7 5;
+#X connect 21 0 7 6;
+#X connect 22 0 153 0;
+#X connect 29 0 48 4;
+#X connect 29 0 90 3;
+#X connect 30 0 71 0;
+#X connect 30 0 72 0;
+#X connect 32 0 72 2;
+#X connect 32 0 5 1;
+#X connect 33 0 89 1;
+#X connect 33 0 130 1;
+#X connect 33 0 5 2;
+#X connect 33 0 148 1;
+#X connect 34 0 45 0;
+#X connect 34 0 45 1;
+#X connect 34 0 73 2;
+#X connect 34 1 41 0;
+#X connect 34 2 40 0;
+#X connect 35 0 34 4;
+#X connect 36 0 34 0;
+#X connect 37 0 34 1;
+#X connect 38 0 34 2;
+#X connect 39 0 34 3;
+#X connect 42 0 35 0;
+#X connect 43 0 130 0;
+#X connect 44 0 36 0;
+#X connect 44 0 89 0;
+#X connect 45 0 90 0;
+#X connect 45 0 99 0;
+#X connect 45 1 90 1;
+#X connect 45 1 99 1;
+#X connect 45 2 50 0;
+#X connect 46 0 45 2;
+#X connect 47 0 45 3;
+#X connect 48 0 45 0;
+#X connect 48 1 45 1;
+#X connect 49 0 45 4;
+#X connect 51 0 73 0;
+#X connect 51 0 73 1;
+#X connect 51 1 58 0;
+#X connect 51 2 57 0;
+#X connect 52 0 51 4;
+#X connect 53 0 51 0;
+#X connect 54 0 51 1;
+#X connect 55 0 51 2;
+#X connect 56 0 51 3;
+#X connect 59 0 52 0;
+#X connect 61 0 48 10;
+#X connect 62 0 48 1;
+#X connect 62 0 48 0;
+#X connect 62 0 73 0;
+#X connect 62 0 73 1;
+#X connect 62 1 69 0;
+#X connect 62 2 68 0;
+#X connect 63 0 62 4;
+#X connect 64 0 62 0;
+#X connect 65 0 62 1;
+#X connect 66 0 62 2;
+#X connect 67 0 62 3;
+#X connect 70 0 63 0;
+#X connect 71 0 64 0;
+#X connect 72 1 53 0;
+#X connect 73 0 45 0;
+#X connect 73 1 45 1;
+#X connect 74 0 84 0;
+#X connect 74 1 81 0;
+#X connect 74 2 80 0;
+#X connect 75 0 74 4;
+#X connect 76 0 74 0;
+#X connect 77 0 74 1;
+#X connect 78 0 74 2;
+#X connect 79 0 74 3;
+#X connect 82 0 75 0;
+#X connect 83 0 84 1;
+#X connect 84 0 45 0;
+#X connect 84 1 45 1;
+#X connect 87 0 89 2;
+#X connect 88 0 89 3;
+#X connect 89 0 76 0;
+#X connect 90 0 132 0;
+#X connect 90 1 132 1;
+#X connect 91 0 90 4;
+#X connect 92 0 90 2;
+#X connect 93 0 48 9;
+#X connect 94 0 48 8;
+#X connect 95 0 48 7;
+#X connect 96 0 48 6;
+#X connect 97 0 48 5;
+#X connect 100 0 99 2;
+#X connect 101 0 75 1;
+#X connect 102 0 63 1;
+#X connect 103 0 52 1;
+#X connect 104 0 35 1;
+#X connect 105 0 115 0;
+#X connect 105 1 112 0;
+#X connect 105 2 111 0;
+#X connect 106 0 105 4;
+#X connect 107 0 105 0;
+#X connect 107 0 131 0;
+#X connect 108 0 105 1;
+#X connect 109 0 105 2;
+#X connect 110 0 105 3;
+#X connect 113 0 106 0;
+#X connect 114 0 106 1;
+#X connect 115 0 45 0;
+#X connect 115 0 45 1;
+#X connect 116 0 122 0;
+#X connect 116 0 131 6;
+#X connect 117 0 123 0;
+#X connect 117 0 131 1;
+#X connect 118 0 124 0;
+#X connect 118 0 131 2;
+#X connect 119 0 125 0;
+#X connect 119 0 131 3;
+#X connect 120 0 126 0;
+#X connect 120 0 131 4;
+#X connect 121 0 127 0;
+#X connect 121 0 131 5;
+#X connect 128 0 130 2;
+#X connect 129 0 130 3;
+#X connect 130 0 107 0;
+#X connect 131 0 115 1;
+#X connect 133 0 132 2;
+#X connect 134 0 103 0;
+#X connect 134 0 114 0;
+#X connect 134 0 101 0;
+#X connect 134 0 102 0;
+#X connect 134 0 104 0;
+#X connect 134 0 135 0;
+#X connect 135 0 113 0;
+#X connect 135 0 82 0;
+#X connect 135 0 70 0;
+#X connect 135 0 42 0;
+#X connect 135 0 59 0;
+#X connect 136 0 142 0;
+#X connect 137 0 143 0;
+#X connect 138 0 144 0;
+#X connect 139 0 145 0;
+#X connect 140 0 146 0;
+#X connect 141 0 147 0;
+#X connect 142 0 148 11;
+#X connect 143 0 148 6;
+#X connect 144 0 148 7;
+#X connect 145 0 148 8;
+#X connect 146 0 148 9;
+#X connect 147 0 148 10;
+#X connect 148 0 45 0;
+#X connect 148 0 45 1;
+#X connect 149 0 148 5;
+#X connect 150 0 148 4;
+#X connect 151 0 148 0;
+#X connect 152 0 148 3;
+#X connect 153 0 151 0;
+#X connect 154 0 148 2;
