@@ -1,4 +1,4 @@
-#N canvas 435 207 2096 1117 12;
+#N canvas 312 129 2096 1117 12;
 #X obj 57 96 metis_tempo;
 #X obj 57 62 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
@@ -71,7 +71,7 @@ rmspeak 0 \, lookahead 10, f 70;
 1;
 #X obj 167 845 metis_stereoDelay;
 #X obj 747 889 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 1000 1;
+-1 -1 700 1;
 #X obj 702 974 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -258049 -1;
 #X obj 793 360 metis_sampler;
@@ -100,7 +100,7 @@ rmspeak 0 \, lookahead 10, f 70;
 #X obj 101 510 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 123 494 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 250 1;
+-1 -1 650 1;
 #X floatatom 145 569 5 0 0 0 - - -, f 5;
 #X floatatom 101 569 5 0 0 0 - - -, f 5;
 #X obj 145 450 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
@@ -136,9 +136,9 @@ rmspeak 0 \, lookahead 10, f 70;
 #X obj 305 805 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
 -1 -1 2500 1;
 #X obj 285 805 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 1900 1;
 #X obj 265 805 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 2500 1;
+-1 -1 1900 1;
 #X floatatom 251 777 5 1 8 0 - - -, f 5;
 #X floatatom 237 747 5 1 8 0 - - -, f 5;
 #X text 1819 959 reverb and hipass in one knob;
