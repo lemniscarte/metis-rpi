@@ -1,4 +1,4 @@
-#N canvas 312 129 2096 1117 12;
+#N canvas 312 117 2096 1117 12;
 #X obj 57 96 metis_tempo;
 #X obj 57 62 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
@@ -55,7 +55,7 @@
 #X obj 400 507 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 422 491 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 1000 1;
+-1 -1 850 1;
 #X floatatom 444 566 5 0 0 0 - - -, f 5;
 #X floatatom 400 566 5 0 0 0 - - -, f 5;
 #X obj 444 447 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
@@ -83,7 +83,7 @@ rmspeak 0 \, lookahead 10, f 70;
 #X obj 837 331 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 859 315 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 250 1;
+-1 -1 200 1;
 #X floatatom 881 390 5 0 0 0 - - -, f 5;
 #X floatatom 837 390 5 0 0 0 - - -, f 5;
 #X obj 881 271 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
@@ -100,7 +100,7 @@ rmspeak 0 \, lookahead 10, f 70;
 #X obj 101 510 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 123 494 vsl 14 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 650 1;
+-1 -1 100 1;
 #X floatatom 145 569 5 0 0 0 - - -, f 5;
 #X floatatom 101 569 5 0 0 0 - - -, f 5;
 #X obj 145 450 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
@@ -117,7 +117,7 @@ rmspeak 0 \, lookahead 10, f 70;
 #X obj 926 679 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 948 663 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 900 1;
+-1 -1 400 1;
 #X floatatom 970 738 5 0 0 0 - - -, f 5;
 #X floatatom 926 738 5 0 0 0 - - -, f 5;
 #X obj 970 619 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144 -1
@@ -158,7 +158,7 @@ rmspeak 0 \, lookahead 10, f 70;
 #X obj 1419 758 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X obj 1441 742 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 2500 1;
+-1 -1 800 1;
 #X floatatom 1463 817 5 0 0 0 - - -, f 5;
 #X floatatom 1419 817 5 0 0 0 - - -, f 5;
 #X obj 1463 698 bng 15 50 20 0 empty empty empty 17 7 0 10 -262144
@@ -193,17 +193,17 @@ rmspeak 0 \, lookahead 10, f 70;
 #X obj 1173 117 loadbang;
 #X obj 1173 146 del 100;
 #X obj 1991 352 vsl 15 26 1 1000 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 1350 1;
+-1 -1 2500 1;
 #X obj 1756 352 vsl 15 26 0 1 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 850 1;
+-1 -1 1050 1;
 #X obj 1803 352 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 1850 352 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
 -1 -1 1700 1;
 #X obj 1897 352 vsl 15 26 0 100 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 200 1;
+-1 -1 800 1;
 #X obj 1944 352 vsl 15 26 0 1000 0 1 empty empty empty 0 -9 0 10 -262144
--1 -1 650 1;
+-1 -1 2500 1;
 #X floatatom 1991 392 5 0 0 0 - - -, f 5;
 #X floatatom 1756 392 5 0 0 0 - - -, f 5;
 #X floatatom 1803 392 5 0 0 0 - - -, f 5;
@@ -380,11 +380,13 @@ rmspeak 0 \, lookahead 10, f 70;
 #X connect 134 0 102 0;
 #X connect 134 0 104 0;
 #X connect 134 0 135 0;
+#X connect 134 0 150 0;
 #X connect 135 0 113 0;
 #X connect 135 0 82 0;
 #X connect 135 0 70 0;
 #X connect 135 0 42 0;
 #X connect 135 0 59 0;
+#X connect 135 0 149 0;
 #X connect 136 0 142 0;
 #X connect 137 0 143 0;
 #X connect 138 0 144 0;
